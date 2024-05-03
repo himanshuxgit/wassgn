@@ -17,6 +17,7 @@ const jdSlice = createSlice({
           : action.payload;
       state.locations = [
         ...new Set([
+          ...state.locations,
           ...action.payload
             .map((jd) => jd.location.toUpperCase())
             .filter(
@@ -28,7 +29,9 @@ const jdSlice = createSlice({
         ]),
       ];
     },
-
+    updateTotalCount: (state, action) => {
+      state.totalCount = action.payload;
+    },
   },
 });
 
