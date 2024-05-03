@@ -90,9 +90,15 @@ const JobCard = ({
         </div>
       </div>
       <div
-
+        style={{
+          display: "flex",
+          gap: "0.2rem",
+          marginTop: "1rem",
+          flexDirection: "column",
+        }}
       >
         <Typography
+          style={{ fontWeight: "bold", color: "#8b8b8b", letterSpacing: "1px" }}
         >
           Minimum Experience
         </Typography>
@@ -105,6 +111,14 @@ const JobCard = ({
         rel="noopener noreferrer"
         variant="contained"
         color="primary"
+        style={{
+          borderRadius: 35,
+          backgroundColor: "#58ecc4",
+          marginTop: "1rem",
+          fontSize: "16px",
+          color: "black",
+          textDecoration: "none",
+        }}
       >
         ⚡ Easy Apply
       </Button>
